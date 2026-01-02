@@ -10,6 +10,7 @@ lerna-debug.log*
 # Dependency directories    
 client/node_modules/
 client/dist/
+client/dev-ssr/
 client/dev-dist/
 jspm_packages/
 # Optional npm cache directory
