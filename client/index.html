@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- PWA Meta Tags -->
+  <meta name="theme-color" content="#4f46e5">
+  <meta name="description" content="Society Events and Activities Manager">
+
+  <!-- iOS PWA Support -->
+
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <!-- Windows PWA Support -->
+  <meta name="msapplication-TileColor" content="#4f46e5">
+
+  <title>Society-Connect</title>
+
+  <!-- Add this script for install prompt -->
+  <script>
+    // Store the install prompt event
+    window.deferredPrompt = null
+
+    window.addEventListener('beforeinstallprompt', (e) => {
+      e.preventDefault()
+      window.deferredPrompt = e
+      console.log('App can be installed!')
+    })
+
+    // Track if app was installed
+    window.addEventListener('appinstalled', () => {
+      console.log('App was installed!')
+      window.deferredPrompt = null
+    })
+  </script>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>
