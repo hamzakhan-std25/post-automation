@@ -1,0 +1,14 @@
+[
+     {
+    "id": 1,
+    "title": "activity 1",
+    "description": "Join us for cultural performances and food stalls",
+    "date": "2024-12-15"
+  },
+  {
+    "id": 2,
+    "title": "activity 2",
+    "description": "Learn web development basics",
+    "date": "2024-12-25"
+  }
+]
