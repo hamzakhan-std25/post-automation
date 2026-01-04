@@ -12,9 +12,9 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'masked-icon.svg'],
       manifest: {
-        name: 'Society Connect',
-        short_name: 'Society',
-        description: 'Manage society events and activities',
+        name: 'Auto-Post',
+        short_name: 'Auto-Post',
+        description: 'Post on Social Media with the help of AI',
         theme_color: '#4f46e5',
         background_color: '#ffffff',
         display: 'standalone',
@@ -103,6 +103,8 @@ export default defineConfig({
       }
     })
   ],
+
+
     // Add this server configuration
   server: {
     // This handles API routes in development
@@ -115,6 +117,8 @@ export default defineConfig({
       }
     }
   },
+
+
   // Make sure the public folder is properly served
   publicDir: 'public'
 })

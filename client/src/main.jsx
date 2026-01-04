@@ -5,8 +5,7 @@ import React, { lazy, Suspense } from 'react';
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 const App = lazy(() => import('./App.jsx'));
-// import App from './App.jsx'
-import './index.css'
+// import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

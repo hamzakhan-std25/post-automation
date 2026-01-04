@@ -8,10 +8,9 @@
 
   <!-- PWA Meta Tags -->
   <meta name="theme-color" content="#4f46e5">
-  <meta name="description" content="Society Events and Activities Manager">
+  <meta name="description" content="Automate social media post using AI">
 
   <!-- iOS PWA Support -->
-
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -20,25 +19,7 @@
   <!-- Windows PWA Support -->
   <meta name="msapplication-TileColor" content="#4f46e5">
 
-  <title>Society-Connect</title>
-
-  <!-- Add this script for install prompt -->
-  <script>
-    // Store the install prompt event
-    window.deferredPrompt = null
-
-    window.addEventListener('beforeinstallprompt', (e) => {
-      e.preventDefault()
-      window.deferredPrompt = e
-      console.log('App can be installed!')
-    })
-
-    // Track if app was installed
-    window.addEventListener('appinstalled', () => {
-      console.log('App was installed!')
-      window.deferredPrompt = null
-    })
-  </script>
+  <title>Auto-Post</title>
 </head>
 
 <body>
